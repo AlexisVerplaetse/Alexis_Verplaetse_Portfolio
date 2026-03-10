@@ -7,6 +7,7 @@
   --muted:    #666666;
   --accent:   #2563eb;
   --font:     'Segoe UI', Arial, sans-serif;
+  --bouton:   #999999;
 }
 
 /* ── RESET ─────────────────────────────── */
@@ -29,18 +30,20 @@ body {
 }
 
 /* ── NAVIGATION ────────────────────────── */
+
 nav {
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
+  border-bottom: 3px solid var(--border);  
   top: 0;
-  z-index: 10;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-inner {
-  max-width: 1000px;
+  max-width: 1200px;     /* un peu plus large */
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;  /* plus grande */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,25 +51,25 @@ nav {
 
 .nav-logo {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 2.5rem;     /* logo plus grand */
   color: var(--text);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;           /* espace entre les liens */
 }
 
 nav a {
   text-decoration: none;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1.2rem;     /* texte plus grand */
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: var(--accent);
+  color: black;
 }
 
 /* ── SECTIONS ──────────────────────────── */
@@ -369,4 +372,34 @@ footer strong {
   .contact-inner   { grid-template-columns: 1fr; gap: 2rem; }
   #hero h1         { font-size: 2rem; }
   nav ul           { gap: 1rem; }
+}
+
+/* ── BOUTON SCROLL TO TOP ───────────────── */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--bouton);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#scrollTopBtn:hover {
+  background: #000000;
+  color: #fff;
+}
+#scrollTopBtn svg{
+  fill: white;
+  transition: transform 0.3s;
+}
+
+#scrollTopBtn:hover svg{
+  transform: translateY(-8px);
 }
