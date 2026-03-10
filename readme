@@ -1,0 +1,9 @@
+# envoyer sur github 
+git add *
+git commit -m "mesage"
+git push
+
+# récuperer le projet depuis github 
+git clone https://github.com/AlexisVerplaetse/Alexis_Verplaetse_Portfolio.git
+
+
