@@ -105,7 +105,7 @@
         <h3>Nom du Projet 1</h3>
         <p>Description courte du projet : objectif, fonctionnalités principales
           et ce que tu as appris en le réalisant.</p>
-        <a href="#" class="link">Voir le projet →</a>
+        <a class="link" onclick="openModal('modal1')">Lire la suite →</a>
       </div>
 
       <div class="project-card">
@@ -117,7 +117,7 @@
         <h3>Nom du Projet 2</h3>
         <p>Description courte du projet : objectif, fonctionnalités principales
           et ce que tu as appris en le réalisant.</p>
-        <a href="#" class="link">Voir le projet →</a>
+         <a class="link" onclick="openModal('modal2')">Lire la suite →</a>
       </div>
 
       <div class="project-card">
@@ -129,7 +129,7 @@
         <h3>Nom du Projet 3</h3>
         <p>Description courte du projet : objectif, fonctionnalités principales
           et ce que tu as appris en le réalisant.</p>
-        <a href="#" class="link">Voir le projet →</a>
+         <a class="link" onclick="openModal('modal3')">Lire la suite →</a>
       </div>
 
     </div>
@@ -170,6 +170,41 @@
   <path d="M12 5l7 7-1.4 1.4L13 9.8V20h-2V9.8L6.4 13.4 5 12z"/>
 </svg>
 </button>
+
+<!-- Modals pour les projets -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Nom du Projet 1</h2>
+    <p>
+      Ce projet utilise PHP, MySQL et Bootstrap.
+      Il permet de gérer une base de données et d'afficher les résultats
+      dans une interface web responsive.
+    </p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Nom du Projet 2</h2>
+    <p>
+      Application web utilisant JavaScript et une API REST
+      pour récupérer des données dynamiques.
+    </p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Nom du Projet 3</h2>
+    <p>
+      Application Python avec interface Tkinter
+      permettant de gérer des données SQL.
+    </p>
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer>
