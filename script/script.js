@@ -8,10 +8,11 @@ function scrollToTop() {
     });
 }
 
-function openModal(id){
+// modal functions
+window.openModal = function(id){
   document.getElementById(id).style.display = "flex";
 }
 
-function closeModal(id){
+window.closeModal = function(id){
   document.getElementById(id).style.display = "none";
 }
