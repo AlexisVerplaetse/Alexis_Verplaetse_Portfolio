@@ -368,13 +368,66 @@ footer strong {
   color: var(--text);
 }
 
+
+
 /* ── RESPONSIVE ────────────────────────── */
-@media (max-width: 700px) {
-  .apropos-inner   { flex-direction: column; gap: 1.5rem; }
-  .contact-inner   { grid-template-columns: 1fr; gap: 2rem; }
-  #hero h1         { font-size: 2rem; }
-  nav ul           { gap: 1rem; }
+
+/* Tablette (max 900px) */
+@media (max-width: 900px) {
+  .nav-logo { font-size: 1.8rem; }
+  nav a { font-size: 1rem; }
+  nav ul { gap: 1.5rem; }
+
+  #hero h1 { font-size: 2.2rem; }
+
+  .skills-grid { padding: 0 1rem 2rem; }
+  .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
 }
+
+/* Mobile (max 600px) */
+@media (max-width: 600px) {
+
+  /* Nav : logo + liens en colonne */
+  .nav-inner { flex-direction: column; gap: 1rem; padding: 1rem; }
+  .nav-logo { font-size: 1.5rem; }
+  nav ul { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  nav a { font-size: 0.95rem; }
+
+  /* Hero */
+  #hero { padding: 3rem 1rem; }
+  #hero h1 { font-size: 1.8rem; }
+  .hero-sub { font-size: 1rem; }
+
+  /* Sections */
+  section, header { padding: 2.5rem 1rem; }
+
+  /* À propos */
+  .apropos-inner { flex-direction: column; gap: 1.5rem; }
+
+  /* Grilles */
+  .skills-grid { grid-template-columns: 1fr; padding: 0 0 2rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-inner { grid-template-columns: 1fr; gap: 2rem; padding: 0 0 2rem; }
+
+  /* Bouton scroll */
+  #scrollTopBtn { width: 3.5rem; height: 3.5rem; bottom: 1rem; right: 1rem; }
+  #scrollTopBtn svg { width: 50px; height: 50px; }
+
+  /* Modal */
+  .modal-content { width: 100vw; height: 100vh; border-radius: 0; padding: 20px 15px; }
+  .modal-image { height: 40vh; }
+}
+
+/* Très petit mobile (max 400px) */
+@media (max-width: 400px) {
+  #hero h1 { font-size: 1.5rem; }
+  .btn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
+  nav ul { gap: 0.6rem; }
+}
+
+
 
 /* ── BOUTON SCROLL TO TOP ───────────────── */
 #scrollTopBtn {

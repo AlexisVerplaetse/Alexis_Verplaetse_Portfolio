@@ -2,10 +2,22 @@
 // Fonction pour remonter tout en haut de la page
 
 function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Animation de défilement fluide
-    });
+  const depart = window.scrollY;       // position actuelle
+  const duree = 1000;                  // durée en ms
+  const debut = performance.now();     // heure de départ
+
+  function animer(maintenant) {
+    // progression de 0 à 1 (0 = début, 1 = arrivé en haut)
+    const p = Math.min((maintenant - debut) / duree, 1);
+
+    // déplace la page vers le haut
+    window.scrollTo(0, depart * (1 - p));
+
+    // continue jusqu'à p = 1
+    if (p < 1) requestAnimationFrame(animer);
+  }
+
+  requestAnimationFrame(animer);
 }
 
 // ── MODAL FUNCTIONS ─────────────────────
