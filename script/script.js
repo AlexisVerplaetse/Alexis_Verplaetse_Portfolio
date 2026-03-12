@@ -20,6 +20,7 @@ window.closeModal = function(id){
   document.getElementById(id).style.display = "none";
 }
 
+
 // fermer le modal si on clique en dehors
 window.addEventListener("click", function(event) {
   const modals = document.querySelectorAll(".modal");
