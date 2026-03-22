@@ -43,3 +43,45 @@ window.addEventListener("click", function(event) {
     }
   });
 });
+
+
+// code pour l'easter egg
+const konamiCode = [
+  "ArrowUp","ArrowUp",
+  "ArrowDown","ArrowDown",
+  "ArrowLeft","ArrowRight",
+  "ArrowLeft","ArrowRight"
+];
+
+let index = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === konamiCode[index]) {
+        index++;
+
+        if (index === konamiCode.length) {
+
+            // Image
+            const img = document.getElementById("easterImg");
+            img.style.display = "block";
+            img.style.animation = "pop 0.25s ease";
+
+            // 🔊 Screamer
+            const audio = document.getElementById("screamer");
+            audio.currentTime = 0; 
+            audio.volume = 0.1;
+            audio.play();
+
+            // ⏱ Disparaît après 3 secondes
+            setTimeout(() => {
+                img.style.display = "none"; // cacher l'image
+                audio.pause();              // couper le son
+                audio.currentTime = 0;      // remettre au début
+            }, 5000); // 5000 ms = 5 secondes
+
+            index = 0;            
+        }
+    } else {
+        index = 0;
+    }
+});

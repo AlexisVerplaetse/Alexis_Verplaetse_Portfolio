@@ -64,28 +64,43 @@
       </div>
 
       <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p> fetch API, logique client.</p>
+        <h3>JavaScript / Angular</h3>
+        <p>Fetch API, logique client, conditions, fonctions.</p>
       </div>
 
       <div class="skill-card">
         <h3>PHP / Laravel</h3>
-        <p>Backend, MVC, routes, Frontend.</p>
+        <p>Backend, MVC, routes, Frontend, dynamique.</p>
       </div>
 
       <div class="skill-card">
         <h3>MySQL / BDD</h3>
-        <p> requêtes, procédures stockées, MCD(Modèle conceptuel de données).</p>
+        <p>Requêtes, procédures stockées, triggers, MCD (Modèle Conceptuel de Données).</p>
       </div>
 
       <div class="skill-card">
-        <h3>C# / Python</h3>
-        <p>POO(Programmation Orientée Objet), algorithmes, scripts d'automatisation.</p>
+        <h3>C# / Entity Framework</h3>
+        <p>POO (Programmation Orientée Objet), algorithmes, scripts d'automatisation, ORM.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Scripts, automatisation, logique, conditions, fonctions, manipulation de données, fichiers (CSV/JSON).</p>
       </div>
 
       <div class="skill-card">
         <h3>Git & GitHub</h3>
-        <p>Versioning, branches, pull requests.</p>
+        <p>Versioning, Push, branches, pull requests.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Hébergement & Déploiement</h3>
+        <p>OVH, gestion de serveurs, déploiement d'applications web, FTP FileZilla.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Outils de développement</h3>
+        <p>Visual Studio Code, Visual Studio 2022 (C#).</p>
       </div>
 
     </div>
@@ -119,6 +134,16 @@
         <h3>Stage Apeeac</h3>
         <p>Description : réaliser un site internet dynamique avec Laravel, Panel administrateur, hébergement OVH, base de données MySQL.</p>
         <a class="link" onclick="openModal('modal1')">Lire la suite →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="tag">...</span>
+        </div>
+        <h3>Nom du Projet</h3>
+        <p>Description courte du projet : objectif, fonctionnalités principales
+          et ce que tu as appris en le réalisant.</p>
+         <a class="link" onclick="openModal('modal2')">Lire la suite →</a>
       </div>
 
     </div>
@@ -186,34 +211,43 @@
   </div>
 </section>
 
-<button id="scrollTopBtn" onclick="scrollToTop()" >
+<button id="scrollTopBtn" onclick="scrollToTop()">
   <svg width="75" height="75" viewBox="0 0 24 24">  
   <path d="M12 5l7 7-1.4 1.4L13 9.8V20h-2V9.8L6.4 13.4 5 12z"/>
 </svg>
 </button>
 
-<!-- Modal : Projet Stage APEEAC -->
+<!-- Easter egg image -->
+<img id="easterImg" src="image/easterImg.jpg" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width:100%;">
+<audio id="screamer">
+  <source src="image/Scary.mp3" type="audio/mpeg">
+  Ton navigateur ne supporte pas l'audio.
+</audio>
+
+
+<!-- Les Modal -->
+<!-- Modal1 : Projet Stage APEEAC -->
 <div id="modal1" class="modal">
   <div class="modal-content">
     
     <span class="close" onclick="closeModal('modal1')">&times;</span>
 
-    <h2>Stage – Développement Web pour l’APEEAC (Valenciennes)</h2>
+    <h2>Stage – Développement Web pour l'APEEAC (Valenciennes)</h2>
 
     <p>
-      Durant mon stage au sein de l’APEEAC de Valenciennes, j’ai participé à la conception et au développement
-      d’un site web dynamique permettant de gérer et de publier différentes informations destinées aux utilisateurs.
+      Durant mon stage au sein de l'APEEAC de Valenciennes, j'ai participé à la conception et au développement
+      d'un site web dynamique permettant de gérer et de publier différentes informations destinées aux utilisateurs.
       <br><br>
-      Ce projet m’a permis de mettre en pratique mes compétences en développement web, en gestion de base de données
-      ainsi qu’en structuration d’une application complète.
-      <br> J’ai également pu découvrir les différentes étapes
-      d’un projet réel : analyse des besoins, conception de la base de données, développement et mise en place
+      Ce projet m'a permis de mettre en pratique mes compétences en développement web, en gestion de base de données
+      ainsi qu'en structuration d'une application complète.
+      <br> J'ai également pu découvrir les différentes étapes
+      d'un projet réel : analyse des besoins, conception de la base de données, développement et mise en place
       des fonctionnalités.
     </p>
 
     <p>
-      Cette expérience m’a appris à travailler sur un projet concret, à respecter des contraintes techniques
-      et organisationnelles, ainsi qu’à collaborer avec une équipe.
+      Cette expérience m'a appris à travailler sur un projet concret, à respecter des contraintes techniques
+      et organisationnelles, ainsi qu'à collaborer avec une équipe.
     </p>
 
     <br>
@@ -221,13 +255,13 @@
     <h3>Conception de la base de données</h3>
 
     <p>
-      Avant de commencer le développement du site, la base de données a été conçue à l’aide d’un
+      Avant de commencer le développement du site, la base de données a été conçue à l'aide d'un
       <strong>MCD (Modèle Conceptuel de Données)</strong>.
       <br><br>
       Le MCD permet de structurer les informations nécessaires au fonctionnement du site en identifiant
       les différentes entités, leurs attributs ainsi que les relations entre elles. 
       <br>Cette étape est essentielle
-      pour organiser correctement les données et faciliter le développement de l’application.
+      pour organiser correctement les données et faciliter le développement de l'application.
     </p>
 
     <img src="image/apeeac/apeeac_mcd.png" class="modal-image">
@@ -238,8 +272,8 @@
 
     <p>
       Le site propose une interface simple et accessible permettant aux utilisateurs de consulter
-      les informations disponibles et d’accéder aux différentes fonctionnalités du service.<br>
-      Voici un aperçu de la page d’accueil du site du point de vue d’un utilisateur.
+      les informations disponibles et d'accéder aux différentes fonctionnalités du service.<br>
+      Voici un aperçu de la page d'accueil du site du point de vue d'un utilisateur.
     </p>
 
     <img src="image/apeeac/user_accueil.png" class="modal-image">
@@ -249,7 +283,7 @@
     <h3>Fonctionnalités dynamiques</h3>
 
     <p>
-      Plusieurs fonctionnalités dynamiques ont été développées afin de permettre l’affichage
+      Plusieurs fonctionnalités dynamiques ont été développées afin de permettre l'affichage
       et la gestion des données directement depuis la base de données.
     </p>
 
@@ -267,18 +301,17 @@
     <img src="image/apeeac/formulaire_anonce.png" class="modal-image">
     <img src="image/apeeac/petite_anonce.png" class="modal-image">
     <img src="image/apeeac/visuel_petiteanonce.png" class="modal-image">
-  
 
     <br>
 
-  <h3>Interface d’administration</h3>
+    <h3>Interface d'administration</h3>
 
-<p>
-Une interface d’administration a été développée afin de permettre aux administrateurs de gérer le contenu du site ainsi que les différentes données présentes dans la base de données.<br>
-Cette interface est accessible uniquement aux administrateurs. <br>
-Elle leur permet d’ajouter, de modifier ou de supprimer des visuels pour l'utilisateurs ainsi que de gérer les différentes sections du site. <br>
-Par exemple, les administrateurs peuvent ajouter des archives et des evements, gérer les petites annonces, ou encore changer les couleur du sites .
-</p>
+    <p>
+      Une interface d'administration a été développée afin de permettre aux administrateurs de gérer le contenu du site ainsi que les différentes données présentes dans la base de données.<br>
+      Cette interface est accessible uniquement aux administrateurs. <br>
+      Elle leur permet d'ajouter, de modifier ou de supprimer des visuels pour l'utilisateurs ainsi que de gérer les différentes sections du site. <br>
+      Par exemple, les administrateurs peuvent ajouter des archives et des évènements, gérer les petites annonces, ou encore changer les couleurs du site.
+    </p>
 
     <img src="image/apeeac/admin_paneaux.png" class="modal-image">
     <img src="image/apeeac/admin_accueil.png" class="modal-image">
@@ -286,17 +319,20 @@ Par exemple, les administrateurs peuvent ajouter des archives et des evements, g
   </div>
 </div>
 
-<!-- Modal exemple 
+
+<!-- Modal2 : Projet -->
 <div id="modal2" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h2>Nom du Projet 2</h2>
+    <h2>Nom du Projet</h2>
     <p>
-      Application web utilisant JavaScript et une API REST
-      pour récupérer des données dynamiques.
+      Test 
     </p>
   </div>
-</div>-->
+</div>
+
+<!-- Fin des modal -->
+
 
   <!-- FOOTER -->
   <footer>
