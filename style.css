@@ -463,7 +463,7 @@ footer strong {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: var(--bouton);
+  background: var(--muted);
   color: #fff;
   border: none;
   border-radius: 50%;
