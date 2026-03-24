@@ -531,7 +531,6 @@ footer strong {
 
 .close:hover {
   color: #e53e3e;
-  transform: rotate(90deg);
 }
 
 @keyframes fadeIn {

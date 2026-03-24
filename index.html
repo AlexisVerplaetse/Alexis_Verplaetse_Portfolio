@@ -135,7 +135,7 @@
           <span class="tag">JavaScript</span>
         </div>
         <h3>Stage Apeeac</h3>
-        <p>Description : réaliser un site internet dynamique avec Laravel, Panel administrateur, hébergement OVH, base de données MySQL.</p>
+        <p>Description: réaliser un site internet dynamique avec Laravel, Panel administrateur, hébergement OVH, base de données MySQL.</p>
         <a class="link" onclick="openModal('modal1')">Lire la suite →</a>
       </div>
 
@@ -147,9 +147,8 @@
 
     <h3>Stage chez Onet</h3>
     <p>
-      <strong>Description :</strong> Création d'un jeu de société web interactif pour la formation technique des collaborateurs chez Onet. 
-      Le projet inclut des pions mobiles, des questions et un tableau pour gérer le classement. 
-      Une première expérience concrète qui a consolidé mes bases en JavaScript.
+      <strong>Description:</strong> Création d'un jeu de société web interactif pour la formation technique des collaborateurs chez Onet.<br>
+      Html, css, JavaScript.
     </p>
     <a class="link" onclick="openModal('modal2')">En savoir plus →</a>
 </div>
@@ -334,49 +333,88 @@
 <!-- Modal2 : Projet Stage Onet -->
 <div id="modal2" class="modal">
   <div class="modal-content">
+
     <span class="close" onclick="closeModal('modal2')">&times;</span>
-    
-    <h2 style="color: #007bff; margin-bottom: 20px;">Stage chez Onet : Jeu de Formation Web</h2>
-    
-    <div class="modal-body">
-      <h3 style="font-size: 1.2rem; margin-top: 15px;">🎯 Objectif du Projet</h3>
-      <p>
-        Dans le cadre de mon stage de première année,
-        j'ai été chargé de numériser un outil de formation interne pour la société de nettoyage 
-        <strong>Onet</strong>. 
-        L'idée était de transformer un support de formation classique en un <strong>jeu de société web interactif</strong>
-        pour faire un rappel des règles d'hygiène et de sécurité .
-      </p>
 
-      <h3 style="font-size: 1.2rem; margin-top: 15px;">🛠️ Missions & Fonctionnalités</h3>
-      <ul style="line-height: 1.6;">
-        <li><strong>Logique de jeu :</strong> Développement d'un jeu gérant le lancer de dés et les déplacements de pions sur la page , le systeme de questions aleatoires en fonction de la case.</li>
-        <li><strong>Module Quizz :</strong> Création d'un système de questions dynamiques avec validation des réponses en temps réel.</li>
-        <li><strong>Classement :</strong> Mise en place d'un tableau des scores pour encourager la compétition entre collaborateurs.</li>
-      </ul>
+    <h2>Stage – Développement d'un Jeu de Formation Web pour Onet</h2>
 
-      <h3 style="font-size: 1.2rem; margin-top: 15px;">🚀 Compétences acquises</h3>
-      <div class="project-tags" style="margin-top: 10px;">
-        <span class="tag">Algorithmique JS</span>
-        <span class="tag">Programmation orientée objet</span>
-        <span class="tag">CSS et HTML</span>
-        <span class="tag">Gestion de projet</span>
-        <span class="tag">fonctions</span>
-      </div>
+    <p>
+      Durant mon stage de première année au sein d'Onet, groupe spécialisé dans les services de propreté,
+      j'ai été chargé de numériser un outil de formation interne.
+      <br><br>
+      L'objectif était de transformer un support de formation classique en un <strong>jeu de société web interactif</strong>,
+      permettant aux collaborateurs de réviser les règles d'hygiène et de sécurité de façon ludique et engageante.
+    </p>
 
-        <p style="font-style: italic; margin: 0;">
-          Ce projet a été une étape clé dans mon parcours. <br>
-          J'ai dû transformer des besoins métiers concrets en une application fonctionnelle.
-          C'était ma première expérience de développement d'une application web complète,
-          et elle m'a permis de apprendre le JavaScript,ainsi que les logiques de programmation et des questions stockées.
-        </p>
-      </div>
-    </div>
+    <p>
+      Ce projet m'a permis de découvrir les différentes étapes d'un développement web complet :
+      analyse des besoins du client, conception de la logique applicative, développement des fonctionnalités
+      et livraison d'une solution fonctionnelle dans les délais impartis.
+    </p>
+
+    <br>
+
+    <h3>Plateau de jeu et logique de déplacement</h3>
+
+    <p>
+      J'ai développé le lancer de dés, le déplacement des pions sur la page web
+    </p>
+
+    <img src="image/Onet/Base.PNG" class="modal-image">
+    <p>
+      Faire un bouton pour générer un nombre aléatoire entre 1 et 6 pour simuler le lancer de dés et l'afficher à l'écran.
+      <br><br>
+    </p>
+    <img src="image/Onet/dee.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Module Quiz</h3>
+
+    <p>
+      Un système de questions dynamiques a été intégré au jeu.
+      <br><br>
+      Les questions sont tirées aléatoirement en fonction de la catégorie choisie.
+      
+    </p>
+
+    <img src="image/Onet/question.PNG" class="modal-image">
+    <p>
+      Les réponses sont validées en temps réel, <br>
+      ce qui permet un retour immédiat sur les connaissances
+      des collaborateurs en matière d'hygiène et de sécurité.
+    </p>
+    <img src="image/Onet/visuel_question.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Tableau des scores</h3>
+
+    <p>
+      Afin d'encourager la participation et la compétition entre collègues,
+      un classement des scores a été mis en place.
+      <br><br>
+      Ce tableau permet de suivre les performances de chaque joueur
+      et d'animer les sessions de formation de manière conviviale.
+    </p>
+    <img src="image/Onet/Classement.PNG" class="modal-image">
+    <br>
+
+    <h3>Compétences mobilisées</h3>
+
+    <p>
+      Ce projet m'a permis de développer plusieurs compétences clés en développement web :
+      algorithmique JavaScript, programmation orientée objet, structuration de données (questions stockées),
+      ainsi que la gestion d'un projet de A à Z face à un besoin client concret.
+      <br><br>
+      Il s'agissait de ma première expérience de développement d'une application web complète,
+      et elle a constitué une étape fondatrice dans mon apprentissage du développement.
+    </p>
+
   </div>
 </div>
 
 <!-- Fin des modal -->
-
 
   <!-- FOOTER -->
   <footer>
