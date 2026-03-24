@@ -139,15 +139,20 @@
         <a class="link" onclick="openModal('modal1')">Lire la suite →</a>
       </div>
 
-      <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">...</span>
-        </div>
-        <h3>Nom du Projet</h3>
-        <p>Description courte du projet : objectif, fonctionnalités principales
-          et ce que tu as appris en le réalisant.</p>
-         <a class="link" onclick="openModal('modal2')">Lire la suite →</a>
-      </div>
+    <div class="project-card">
+    <div class="project-tags">
+      <span class="tag">JavaScript</span>
+      <span class="tag">HTML/CSS</span>
+    </div>
+
+    <h3>Stage chez Onet</h3>
+    <p>
+      <strong>Description :</strong> Création d'un jeu de société web interactif pour la formation technique des collaborateurs chez Onet. 
+      Le projet inclut des pions mobiles, des questions et un tableau pour gérer le classement. 
+      Une première expérience concrète qui a consolidé mes bases en JavaScript.
+    </p>
+    <a class="link" onclick="openModal('modal2')">En savoir plus →</a>
+</div>
 
     </div>
   </section>
@@ -226,6 +231,7 @@
   <source src="image/Scary.mp3" type="audio/mpeg">
   Ton navigateur ne supporte pas l'audio.
 </audio>
+<img id="easterImg2" src="image/meme1.jpg" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width:100%;">
 
 
 <!-- Les Modal -->
@@ -322,15 +328,47 @@
   </div>
 </div>
 
-
-<!-- Modal2 : Projet -->
+<!-- Modal2 : Projet Stage Onet -->
 <div id="modal2" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h2>Nom du Projet</h2>
-    <p>
-      Test 
-    </p>
+    
+    <h2 style="color: #007bff; margin-bottom: 20px;">Stage chez Onet : Jeu de Formation Web</h2>
+    
+    <div class="modal-body">
+      <h3 style="font-size: 1.2rem; margin-top: 15px;">🎯 Objectif du Projet</h3>
+      <p>
+        Dans le cadre de mon stage de première année,
+        j'ai été chargé de numériser un outil de formation interne pour la société de nettoyage 
+        <strong>Onet</strong>. 
+        L'idée était de transformer un support de formation classique en un <strong>jeu de société web interactif</strong>
+        pour faire un rappel des règles d'hygiène et de sécurité .
+      </p>
+
+      <h3 style="font-size: 1.2rem; margin-top: 15px;">🛠️ Missions & Fonctionnalités</h3>
+      <ul style="line-height: 1.6;">
+        <li><strong>Logique de jeu :</strong> Développement d'un jeu gérant le lancer de dés et les déplacements de pions sur la page , le systeme de questions aleatoires en fonction de la case.</li>
+        <li><strong>Module Quizz :</strong> Création d'un système de questions dynamiques avec validation des réponses en temps réel.</li>
+        <li><strong>Classement :</strong> Mise en place d'un tableau des scores pour encourager la compétition entre collaborateurs.</li>
+      </ul>
+
+      <h3 style="font-size: 1.2rem; margin-top: 15px;">🚀 Compétences acquises</h3>
+      <div class="project-tags" style="margin-top: 10px;">
+        <span class="tag">Algorithmique JS</span>
+        <span class="tag">Programmation orientée objet</span>
+        <span class="tag">CSS et HTML</span>
+        <span class="tag">Gestion de projet</span>
+        <span class="tag">fonctions</span>
+      </div>
+
+        <p style="font-style: italic; margin: 0;">
+          Ce projet a été une étape clé dans mon parcours. <br>
+          J'ai dû transformer des besoins métiers concrets en une application fonctionnelle.
+          C'était ma première expérience de développement d'une application web complète,
+          et elle m'a permis de apprendre le JavaScript,ainsi que les logiques de programmation et des questions stockées.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 

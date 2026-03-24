@@ -85,3 +85,33 @@ document.addEventListener("keydown", (e) => {
         index = 0;
     }
 });
+
+// code pour l'easter egg
+const jack = [
+  "l","o","i","c"
+];
+
+ let ind = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === jack[ind]) {
+        ind++;
+
+        if (ind === jack.length) {
+
+            // Image
+            const img = document.getElementById("easterImg2");
+            img.style.display = "block";
+            img.style.animation = "pop 0.25s ease";
+
+            // ⏱ Disparaît après 3 secondes
+            setTimeout(() => {
+                img.style.display = "none"; // cacher l'image
+            }, 5000); // 5000 ms = 5 secondes
+
+            ind = 0;            
+        }
+    } else {
+        ind = 0;
+    }
+});
