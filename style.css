@@ -6,10 +6,11 @@
   --text:     #1a1a1a;
   --muted:    #666666;
   --accent:   #2563eb;
-  --surlignage: gray;
+  --gris_bleu: #0011ff;
   --accent-dark: #1d4ed8;
   --font:     'Segoe UI', Arial, sans-serif;
-  --bouton:   #999999;
+  --red:     #e53e3e;
+  --black_blue: #1a1a1a;
   --radius:   8px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow:   0 2px 12px rgba(0, 0, 0, 0.08);
@@ -185,7 +186,7 @@ p {
 }
 
 .btn:hover {
-  background: var(--accent-dark);
+  background: var(--gris_bleu);
   transform: translateY(-2px);
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
 }
@@ -541,7 +542,7 @@ footer strong {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 700;
-  border-bottom: 4px solid var(--surlignage);
+  border-bottom: 4px solid var(--accent);
 }
 
 .modal-content .modal-image {
