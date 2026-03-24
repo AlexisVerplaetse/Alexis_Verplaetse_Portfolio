@@ -128,27 +128,25 @@ document.addEventListener("keydown", (e) => {
 const COLOR = ["c", "o", "l", "o", "r"];
 let inde = 0;
 
-// On récupère l'élément link
+// On cible la balise link unique
 const themeLink = document.getElementById("theme-link");
 
 document.addEventListener("keydown", (e) => {
     if (e.key.toLowerCase() === COLOR[inde]) {
         inde++;
-
         if (inde === COLOR.length) {
-            // ON CHANGE LE FICHIER CSS ICI
-            // Si c'est le style de base, on met le spécial, sinon on revient au base
-            if (themeLink.getAttribute("href") === "style.css") {
-                themeLink.setAttribute("href", "style-easteregg.css");
-                console.log("🎨 Easter Egg : Nouveau style chargé !");
+            
+            // On vérifie le fichier actuel pour switcher
+            if (themeLink.getAttribute("href") === "style/style.css") {
+                themeLink.setAttribute("href", "style/easteregg.css");
             } else {
-                themeLink.setAttribute("href", "style.css");
-                console.log("🔙 Retour au style normal.");
+                themeLink.setAttribute("href", "style/style.css");
             }
 
-            inde = 0; 
+            inde = 0;
+            console.log("Style swappé !");
         }
     } else {
-        ind = 0;
+        inde = 0;
     }
 });
