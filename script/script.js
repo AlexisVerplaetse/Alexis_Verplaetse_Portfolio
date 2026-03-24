@@ -104,10 +104,18 @@ document.addEventListener("keydown", (e) => {
             img.style.display = "block";
             img.style.animation = "pop 0.25s ease";
 
+            // 🔊 Meme Sound
+            const audio = document.getElementById("memeSound");
+            audio.currentTime = 0; 
+            audio.volume = 1;
+            audio.play();
+
             // ⏱ Disparaît après 3 secondes
             setTimeout(() => {
                 img.style.display = "none"; // cacher l'image
-            }, 5000); // 5000 ms = 5 secondes
+                audio.pause();              // couper le son
+                audio.currentTime = 0;      // remettre au début
+            }, 4000); // 4000 ms = 4 secondes
 
             ind = 0;            
         }
