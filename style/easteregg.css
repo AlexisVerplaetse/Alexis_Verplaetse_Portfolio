@@ -1,6 +1,11 @@
 /* ── VARIABLES ─────────────────────────── */
 :root {
   --bg:       #ffffff;
+  --violet:   #7c3aed;
+  --jaune:    #fbbf24;
+  --orange:   #f97316;
+  --rose:    #ec4899;
+  --vert:    #22c55e;
   --surface:  #f5f5f5;
   --border:   #e0e0e0;
   --text:     #1a1a1a;
@@ -14,6 +19,87 @@
   --radius:   8px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow:   0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ── KEYFRAMES RGB ─────────────────────── */
+@keyframes rgb-bg {
+  0%   { background-color: var(--violet); }
+  16%  { background-color: var(--rose);   }
+  33%  { background-color: var(--orange); }
+  50%  { background-color: var(--jaune);  }
+  66%  { background-color: var(--vert);   }
+  83%  { background-color: var(--accent); }
+  100% { background-color: var(--violet); }
+}
+
+@keyframes rgb-color {
+  0%   { color: var(--violet); }
+  16%  { color: var(--rose);   }
+  33%  { color: var(--orange); }
+  50%  { color: var(--jaune);  }
+  66%  { color: var(--vert);   }
+  83%  { color: var(--accent); }
+  100% { color: var(--violet); }
+}
+
+@keyframes rgb-border {
+  0%   { border-color: var(--violet); }
+  16%  { border-color: var(--rose);   }
+  33%  { border-color: var(--orange); }
+  50%  { border-color: var(--jaune);  }
+  66%  { border-color: var(--vert);   }
+  83%  { border-color: var(--accent); }
+  100% { border-color: var(--violet); }
+}
+
+@keyframes rgb-border-bottom {
+  0%   { border-bottom-color: var(--violet); }
+  16%  { border-bottom-color: var(--rose);   }
+  33%  { border-bottom-color: var(--orange); }
+  50%  { border-bottom-color: var(--jaune);  }
+  66%  { border-bottom-color: var(--vert);   }
+  83%  { border-bottom-color: var(--accent); }
+  100% { border-bottom-color: var(--violet); }
+}
+
+@keyframes rgb-shadow {
+  0%   { box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5); }
+  16%  { box-shadow: 0 4px 20px rgba(236, 72, 153, 0.5); }
+  33%  { box-shadow: 0 4px 20px rgba(249, 115, 22, 0.5); }
+  50%  { box-shadow: 0 4px 20px rgba(251, 191, 36, 0.5); }
+  66%  { box-shadow: 0 4px 20px rgba(34, 197, 94, 0.5);  }
+  83%  { box-shadow: 0 4px 20px rgba(37, 99, 235, 0.5);  }
+  100% { box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5); }
+}
+
+@keyframes rgb-stroke {
+  0%   { stroke: var(--violet); }
+  16%  { stroke: var(--rose);   }
+  33%  { stroke: var(--orange); }
+  50%  { stroke: var(--jaune);  }
+  66%  { stroke: var(--vert);   }
+  83%  { stroke: var(--accent); }
+  100% { stroke: var(--violet); }
+}
+
+@keyframes rgb-text-shadow {
+  0%   { text-shadow: 0 0 12px rgba(124, 58, 237, 0.6); }
+  16%  { text-shadow: 0 0 12px rgba(236, 72, 153, 0.6); }
+  33%  { text-shadow: 0 0 12px rgba(249, 115, 22, 0.6); }
+  50%  { text-shadow: 0 0 12px rgba(251, 191, 36, 0.6); }
+  66%  { text-shadow: 0 0 12px rgba(34, 197, 94, 0.6);  }
+  83%  { text-shadow: 0 0 12px rgba(37, 99, 235, 0.6);  }
+  100% { text-shadow: 0 0 12px rgba(124, 58, 237, 0.6); }
+}
+
+@keyframes rgb-outline {
+  0%   { outline-color: var(--violet); }
+  16%  { outline-color: var(--rose);   }
+  33%  { outline-color: var(--orange); }
+  50%  { outline-color: var(--jaune);  }
+  66%  { outline-color: var(--vert);   }
+  83%  { outline-color: var(--accent); }
+  100% { outline-color: var(--violet); }
 }
 
 /* ── RESET ─────────────────────────────── */
@@ -33,6 +119,7 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
+  animation: rgb-bg 4s linear infinite;
 }
 
 h2 {
@@ -41,8 +128,9 @@ h2 {
   font-weight: 500;
   border-bottom: 4px solid var(--accent);
   width: fit-content;
-  margin-inline: auto; 
+  margin-inline: auto;
   margin-bottom: 2rem;
+  animation: rgb-border-bottom 4s linear infinite, rgb-color 4s linear infinite;
 }
 
 /* ── NAVIGATION ────────────────────────── */
@@ -55,6 +143,7 @@ nav {
   width: 100%;
   z-index: 1000;
   box-shadow: var(--shadow);
+  animation: rgb-border-bottom 4s linear infinite;
 }
 
 .nav-inner {
@@ -71,6 +160,7 @@ nav {
   font-size: 2rem;
   color: var(--text);
   text-decoration: none;
+  animation: rgb-color 4s linear infinite, rgb-text-shadow 4s linear infinite;
 }
 
 nav ul {
@@ -97,10 +187,11 @@ nav a::after {
   height: 2px;
   background: var(--accent);
   transition: width var(--transition);
+  animation: rgb-bg 4s linear infinite;
 }
 
 nav a:hover {
-  color: var(--text);
+  animation: rgb-color 4s linear infinite;
 }
 
 nav a:hover::after {
@@ -125,8 +216,6 @@ section, header {
   margin-right: auto;
 }
 
-
-
 p {
   color: var(--muted);
   margin-bottom: 1rem;
@@ -147,6 +236,7 @@ p {
   font-size: 0.8rem;
   color: var(--muted);
   margin-bottom: 1.5rem;
+  animation: rgb-border 4s linear infinite, rgb-color 4s linear infinite;
 }
 
 #hero h1 {
@@ -154,6 +244,7 @@ p {
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.5rem;
+  animation: rgb-text-shadow 4s linear infinite;
 }
 
 .hero-sub {
@@ -161,6 +252,7 @@ p {
   color: var(--accent);
   font-weight: 600;
   margin-bottom: 1rem;
+  animation: rgb-color 4s linear infinite;
 }
 
 .hero-desc {
@@ -182,23 +274,24 @@ p {
   border: none;
   cursor: pointer;
   margin: 0.3rem;
-  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
+  animation: rgb-bg 4s linear infinite, rgb-shadow 4s linear infinite;
 }
 
 .btn:hover {
-  background: var(--gris_bleu);
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  filter: brightness(1.15);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--accent);
   border: 1.5px solid var(--accent);
+  animation: rgb-border 4s linear infinite, rgb-color 4s linear infinite;
 }
 
 .btn-outline:hover {
-  background: var(--accent);
+  animation: rgb-bg 4s linear infinite;
   color: #fff;
 }
 
@@ -220,6 +313,7 @@ p {
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
+  animation: rgb-border 4s linear infinite, rgb-shadow 4s linear infinite;
 }
 
 .avatar img {
@@ -247,8 +341,7 @@ p {
 }
 
 .tag:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  animation: rgb-border 4s linear infinite, rgb-color 4s linear infinite;
 }
 
 /* ── COMPÉTENCES ───────────────────────── */
@@ -270,9 +363,8 @@ p {
 }
 
 .skill-card:hover {
-  box-shadow: var(--shadow);
-  border-color: var(--accent);
   transform: translateY(-2px);
+  animation: rgb-border 4s linear infinite, rgb-shadow 4s linear infinite;
 }
 
 .skill-card h3 {
@@ -280,6 +372,10 @@ p {
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.4rem;
+}
+
+.skill-card:hover h3 {
+  animation: rgb-color 4s linear infinite;
 }
 
 .skill-card p {
@@ -305,15 +401,18 @@ p {
 }
 
 .project-card:hover {
-  box-shadow: var(--shadow);
-  border-color: var(--accent);
   transform: translateY(-2px);
+  animation: rgb-border 4s linear infinite, rgb-shadow 4s linear infinite;
 }
 
 .project-card h3 {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text);
+}
+
+.project-card:hover h3 {
+  animation: rgb-color 4s linear infinite;
 }
 
 .project-card p {
@@ -335,11 +434,12 @@ p {
   font-weight: 600;
   cursor: pointer;
   transition: color var(--transition);
+  animation: rgb-color 4s linear infinite;
 }
 
 .link:hover {
-  color: var(--accent-dark);
   text-decoration: underline;
+  filter: brightness(1.2);
 }
 
 /* ── CONTACT ───────────────────────────── */
@@ -371,6 +471,7 @@ p {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: rgb-border 4s linear infinite;
 }
 
 .contact-card::before {
@@ -385,8 +486,7 @@ p {
 
 .contact-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(74, 144, 226, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(74, 144, 226, 0.2);
+  animation: rgb-border 4s linear infinite, rgb-shadow 4s linear infinite;
 }
 
 .contact-card:hover::before {
@@ -407,14 +507,15 @@ p {
 }
 
 .contact-card:hover .contact-icon {
-  background: #dddddd;
   transform: scale(1.08);
+  animation: rgb-bg 4s linear infinite;
 }
 
 .contact-icon svg {
   stroke: white;
   width: 24px;
   height: 24px;
+  animation: rgb-stroke 4s linear infinite;
 }
 
 .contact-label {
@@ -423,6 +524,7 @@ p {
   margin: 5px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+  animation: rgb-color 4s linear infinite;
 }
 
 .contact-value {
@@ -436,7 +538,7 @@ p {
 }
 
 .contact-value:hover {
-  color: #dddddd;
+  animation: rgb-color 4s linear infinite;
 }
 
 .contact-card .contact-location {
@@ -452,10 +554,12 @@ footer {
   border-top: 1px solid var(--border);
   font-size: 0.85rem;
   color: var(--muted);
+  animation: rgb-border-bottom 4s linear infinite;
 }
 
 footer strong {
   color: var(--text);
+  animation: rgb-color 4s linear infinite;
 }
 
 /* ── BOUTON SCROLL TO TOP ───────────────── */
@@ -463,7 +567,6 @@ footer strong {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: var(--muted);
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -473,14 +576,13 @@ footer strong {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition);
+  animation: rgb-bg 4s linear infinite, rgb-shadow 4s linear infinite;
 }
 
 #scrollTopBtn:hover {
-  background: #1a1a1a;
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.2);
 }
 
 #scrollTopBtn svg {
@@ -519,7 +621,8 @@ footer strong {
   padding: 30px;
   overflow-y: auto;
   position: relative;
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.3s ease, rgb-border 4s linear infinite;
+  border: 2px solid transparent;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
@@ -536,6 +639,7 @@ footer strong {
   color: var(--text);
   margin-bottom: 1rem;
   text-align: center;
+  animation: rgb-color 4s linear infinite;
 }
 
 .modal-content h2 {
@@ -543,11 +647,15 @@ footer strong {
   font-size: 1.6rem;
   font-weight: 700;
   border-bottom: 4px solid var(--accent);
+  animation: rgb-border-bottom 4s linear infinite, rgb-color 4s linear infinite;
 }
 
 .modal-content .modal-image {
   display: block;
   margin: 0 auto;
+  animation: rgb-border 4s linear infinite;
+  border: 2px solid transparent;
+  border-radius: 8px;
 }
 
 .close {
@@ -558,11 +666,12 @@ footer strong {
   cursor: pointer;
   color: var(--muted);
   line-height: 1;
-  transition: color var(--transition), transform var(--transition);
+  transition: transform var(--transition);
 }
 
 .close:hover {
-  color: #e53e3e;
+  animation: rgb-color 4s linear infinite;
+  transform: rotate(90deg);
 }
 
 @keyframes fadeIn {
@@ -576,6 +685,27 @@ footer strong {
   object-fit: contain;
   border-radius: 6px;
   margin-bottom: 20px;
+}
+
+/* ── SCROLLBAR RGB ─────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--accent);
+  animation: rgb-bg 4s linear infinite;
+}
+
+/* ── SELECTION RGB ─────────────────────── */
+::selection {
+  animation: rgb-bg 4s linear infinite;
+  color: #fff;
 }
 
 /* ── RESPONSIVE ────────────────────────── */
@@ -617,4 +747,3 @@ footer strong {
   0%   { transform: translate(-50%, -50%) scale(0); }
   100% { transform: translate(-50%, -50%) scale(1); }
 }
-

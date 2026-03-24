@@ -123,3 +123,32 @@ document.addEventListener("keydown", (e) => {
         ind = 0;
     }
 });
+
+
+const COLOR = ["c", "o", "l", "o", "r"];
+let inde = 0;
+
+// On récupère l'élément link
+const themeLink = document.getElementById("theme-link");
+
+document.addEventListener("keydown", (e) => {
+    if (e.key.toLowerCase() === COLOR[inde]) {
+        inde++;
+
+        if (inde === COLOR.length) {
+            // ON CHANGE LE FICHIER CSS ICI
+            // Si c'est le style de base, on met le spécial, sinon on revient au base
+            if (themeLink.getAttribute("href") === "style.css") {
+                themeLink.setAttribute("href", "style-easteregg.css");
+                console.log("🎨 Easter Egg : Nouveau style chargé !");
+            } else {
+                themeLink.setAttribute("href", "style.css");
+                console.log("🔙 Retour au style normal.");
+            }
+
+            inde = 0; 
+        }
+    } else {
+        ind = 0;
+    }
+});
