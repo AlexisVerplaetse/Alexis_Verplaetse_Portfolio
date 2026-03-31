@@ -1,6 +1,6 @@
 # envoyer sur github 
 ```Bash
-git add *
+git add .
 git commit -m "mesage"
 git push
 ```

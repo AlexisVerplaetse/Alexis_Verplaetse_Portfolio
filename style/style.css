@@ -555,6 +555,15 @@ footer strong {
   margin: 0 auto;
 }
 
+.modal-content video {
+  width: 100%;
+  max-width: 80%; /* taille max */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* centre la vidéo */
+  border-radius: 10px; /* optionnel, plus propre */
+}
+
 .close {
   position: absolute;
   top: 15px;
