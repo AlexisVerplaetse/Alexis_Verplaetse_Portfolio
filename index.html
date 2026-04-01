@@ -160,6 +160,17 @@
         <a class="link" onclick="openModal('modal4')">Lire la suite →</a>
       </div>
 
+
+      <div class="project-card">
+        <div class="project-tags">
+          <span class="tag">Test</span>
+        </div>
+        <h3>AP Flutter</h3>
+        <p>Description courte du projet : objectif, fonctionnalités principales
+          et ce que tu as appris en le réalisant.</p>
+        <a class="link" onclick="openModal('modal5')">Lire la suite →</a>
+      </div>
+
     </div>
   </section>
 
@@ -427,23 +438,99 @@
     </div>
   </div>
 
-  <!-- Modal3 : Projet -->
-  <div id="modal3" class="modal">
-    <div class="modal-content">
+<!-- Modal3 : Projet AP C# -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
 
-      <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
 
-      <h2>AP C#</h2>
+    <h2>AP – Gestion des Congés en C# / Windows Forms</h2>
+    <br><br>
+
+    <p>
+      Ce projet a été réalisé dans le cadre d'une activité pratique en deuxième année de BTS SIO.
       <br><br>
-      <p>
-        Description courte du projet : objectif, fonctionnalités principales
-        et ce que tu as appris en le réalisant.
-      </p>
-      <img src="image/Ap/csharp/Form_con.png" class="modal-image">
-      <img src="image/Ap/csharp/Form_liste.png" class="modal-image">
+      L'objectif était de développer une application <strong>Windows Forms</strong> en <strong>C#</strong>
+      permettant de gérer les demandes de congés des praticiens.
+      <br>L'application distingue deux rôles : <strong>Praticien</strong> et <strong>Administrateur RH</strong>,
+      chacun disposant d'un espace dédié.
+    </p>
 
-    </div>
+    <p>
+      Ce projet m'a permis de mettre en pratique la <strong>programmation orientée objet</strong>,
+      la connexion à une base de données via <strong>Entity Framework</strong>,
+      ainsi que la conception d'une interface graphique avec <strong>Windows Forms</strong>.
+    </p>
+
+    <br>
+
+    <h3>Formulaire de connexion</h3>
+
+    <p>
+      L'accès à l'application est sécurisé par un formulaire d'authentification.
+      <br><br>
+      Selon le rôle de l'utilisateur connecté  <strong>Praticien</strong> ou <strong>Administrateur RH</strong> 
+      l'application redirige automatiquement vers l'interface correspondante.
+    </p>
+
+    <img src="image/Ap/csharp/Form_con.png" class="modal-image">
+
+    <br>
+
+    <h3>Espace Praticien – Demande de congé</h3>
+
+    <p>
+      Une fois connecté en tant que praticien, l'utilisateur peut soumettre une demande de congé
+      en sélectionnant une <strong>date de début</strong> et une <strong>date de fin</strong>.
+      <br><br>
+      Le nombre de jours de congés restants est affiché en temps réel,
+      permettant au praticien de suivre son solde disponible.
+    </p>
+
+    <img src="image/Ap/csharp/Demande_conger.PNG" class="modal-image">
+    <br>
+
+    <h3>Espace Administrateur RH – Validation des demandes</h3>
+
+    <p>
+      L'administrateur RH dispose d'une interface dédiée listant toutes les demandes de congés soumises par les praticiens.
+      <br><br>
+      Il peut <strong>valider</strong> ou <strong>refuser</strong> chaque demande directement depuis ce panneau,
+      ce qui met automatiquement à jour le solde de congés du praticien concerné.
+    </p>
+
+    <img src="image/Ap/csharp/visuel_demande_admin.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Base de données des demandes</h3>
+
+    <p>
+      Chaque demande de congé est enregistrée en base de données avec les informations du praticien,
+      les dates demandées et le statut de la demande (en attente, validée, refusée).
+      <br><br>
+      La liaison entre l'application et la base de données est gérée via <strong>Entity Framework</strong>.
+    </p>
+
+    <img src="image/Ap/csharp/Bdd_demande.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Compétences mobilisées</h3>
+
+    <p>
+      Ce projet m'a permis de consolider plusieurs compétences clés :
+      <strong>C#</strong>, <strong>POO</strong>, conception d'interfaces graphiques avec
+      <strong>Windows Forms</strong>, utilisation d' <strong>Entity Framework</strong>,
+      gestion des rôles utilisateurs et manipulation de données en base.
+      <br><br>
+      Il m'a confronté à une logique métier concrète : gérer des droits d'accès différenciés,
+      lier des actions utilisateur à des règles de gestion automatique, et assurer
+      la cohérence des données entre les deux interfaces.
+    </p>
+
   </div>
+</div>
 
  <!-- Modal4 : Projet AP Laravel -->
   <div id="modal4" class="modal">
@@ -539,6 +626,22 @@
     </div>
   </div>
 
+    <!-- Modal5 : Projet AP Flutter -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Teste</h2>
+        <br><br>
+        
+        <img src="image/Ap/flutter/Connexion.PNG" class="modal-image">
+        <img src="image/Ap/flutter/Inscription.PNG" class="modal-image">
+        <img src="image/Ap/flutter/Liste_practicien.PNG" class="modal-image">
+        <img src="image/Ap/flutter/Avis_flutter.PNG" class="modal-image">
+        <img src="image/Ap/flutter/BDD_notation.PNG" class="modal-image">
+
+      </div>
+    </div>
   <!-- Fin des modal -->
 
   <!-- FOOTER -->
