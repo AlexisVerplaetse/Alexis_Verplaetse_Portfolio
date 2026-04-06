@@ -111,68 +111,67 @@
   </section>
 
   <!-- PROJETS -->
-  <section id="projets">
-    <h2>Projets</h2>
-    <div class="projects-grid">
+<section id="projets">
+  <h2>Projets</h2>
+  <div class="projects-grid">
 
-      <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">Laravel</span>
-          <span class="tag">MySQL</span>
-          <span class="tag">OVH</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <h3>Stage Apeeac</h3>
-        <p>Description: réaliser un site internet dynamique avec Laravel, Panel administrateur, hébergement OVH, base de données MySQL.</p>
-        <a class="link" onclick="openModal('modal1')">Lire la suite →</a>
+    <div class="project-card">
+      <div class="project-tags">
+        <span class="tag">Laravel</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">OVH</span>
+        <span class="tag">JavaScript</span>
       </div>
-
-      <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">HTML/CSS</span>
-        </div>
-        <h3>Stage chez Onet</h3>
-        <p>
-          <strong>Description:</strong> Création d'un jeu de société web interactif pour la formation technique des collaborateurs chez Onet.<br>
-          Html, css, JavaScript.
-        </p>
-        <a class="link" onclick="openModal('modal2')">En savoir plus →</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">Test</span>
-        </div>
-        <h3>AP C#</h3>
-        <p>Description courte du projet : objectif, fonctionnalités principales
-          et ce que tu as appris en le réalisant.</p>
-        <a class="link" onclick="openModal('modal3')">Lire la suite →</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">Test</span>
-        </div>
-        <h3>AP Laravel</h3>
-        <p>Description courte du projet : objectif, fonctionnalités principales
-          et ce que tu as appris en le réalisant.</p>
-        <a class="link" onclick="openModal('modal4')">Lire la suite →</a>
-      </div>
-
-
-      <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">Test</span>
-        </div>
-        <h3>AP Flutter</h3>
-        <p>Description courte du projet : objectif, fonctionnalités principales
-          et ce que tu as appris en le réalisant.</p>
-        <a class="link" onclick="openModal('modal5')">Lire la suite →</a>
-      </div>
-
+      <h3>Stage APEEAC</h3>
+      <p>Développement d'un site web dynamique pour l'APEEAC de Valenciennes : panel administrateur, système de petites annonces, hébergement OVH et base de données MySQL.</p>
+      <a class="link" onclick="openModal('modal1')">Lire la suite →</a>
     </div>
-  </section>
+
+    <div class="project-card">
+      <div class="project-tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML / CSS</span>
+      </div>
+      <h3>Stage Onet</h3>
+      <p>Numérisation d'un outil de formation interne sous forme de jeu de société web interactif : lancer de dés, module quiz et tableau des scores pour les collaborateurs.</p>
+      <a class="link" onclick="openModal('modal2')">Lire la suite →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-tags">
+        <span class="tag">C#</span>
+        <span class="tag">Windows Forms</span>
+        <span class="tag">Entity Framework</span>
+      </div>
+      <h3>AP C#</h3>
+      <p>Application Windows Forms de gestion des congés avec deux rôles distincts : Praticien (dépôt de demandes) et Administrateur RH (validation / refus), reliée à une base de données via Entity Framework.</p>
+      <a class="link" onclick="openModal('modal3')">Lire la suite →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-tags">
+        <span class="tag">Laravel</span>
+        <span class="tag">Blade</span>
+        <span class="tag">MySQL</span>
+      </div>
+      <h3>AP Laravel</h3>
+      <p>Application web de gestion des praticiens avec authentification administrateur, affichage de la liste des praticiens et recalcul automatique de leur salaire selon leur ancienneté.</p>
+      <a class="link" onclick="openModal('modal4')">Lire la suite →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Dart</span>
+        <span class="tag">MySQL</span>
+      </div>
+      <h3>AP Flutter</h3>
+      <p>Application mobile développée avec Flutter : inscription, connexion, consultation de la liste des praticiens et visualisation des avis (note + commentaire) stockés en base de données.</p>
+      <a class="link" onclick="openModal('modal5')">Lire la suite →</a>
+    </div>
+
+  </div>
+</section>
 
   <!-- CONTACT -->
   <section id="contact" class="section-alt">
@@ -626,22 +625,115 @@
     </div>
   </div>
 
-    <!-- Modal5 : Projet AP Flutter -->
-    <div id="modal5" class="modal">
-      <div class="modal-content">
+   <!-- Modal5 : Projet AP Flutter -->
+<div id="modal5" class="modal">
+  <div class="modal-content">
 
-        <span class="close" onclick="closeModal('modal5')">&times;</span>
-        <h2>Teste</h2>
-        <br><br>
-        
-        <img src="image/Ap/flutter/Connexion.PNG" class="modal-image">
-        <img src="image/Ap/flutter/Inscription.PNG" class="modal-image">
-        <img src="image/Ap/flutter/Liste_practicien.PNG" class="modal-image">
-        <img src="image/Ap/flutter/Avis_flutter.PNG" class="modal-image">
-        <img src="image/Ap/flutter/BDD_notation.PNG" class="modal-image">
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
 
-      </div>
-    </div>
+    <h2>AP – Application Mobile de Gestion des Praticiens avec Flutter</h2>
+    <br><br>
+
+    <p>
+      Ce projet a été réalisé dans le cadre d'une activité pratique en deuxième année de BTS SIO.
+      <br><br>
+      L'objectif était de développer une <strong>application mobile</strong> avec le framework <strong>Flutter</strong>,
+      connectée à la même base de données que les autres activités pratiques.
+      <br>L'application permet aux utilisateurs de s'inscrire, de se connecter, de consulter
+      la liste des praticiens ainsi que les avis associés à chacun d'eux.
+    </p>
+
+    <p>
+      Ce projet m'a permis de découvrir le développement mobile multiplateforme avec Flutter,
+      la gestion de l'authentification côté client, ainsi que l'affichage dynamique
+      de données issues d'une base partagée.
+    </p>
+
+    <br>
+
+    <h3>Formulaire d'inscription</h3>
+
+    <p>
+      L'application propose un formulaire d'inscription permettant à un nouvel utilisateur
+      de créer son compte en renseignant ses informations personnelles.
+      <br><br>
+      Les données saisies sont enregistrées directement dans la base de données partagée
+      avec les autres activités pratiques.
+    </p>
+
+    <img src="image/Ap/flutter/Inscription.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Formulaire de connexion</h3>
+
+    <p>
+      Un formulaire de connexion sécurisé permet à l'utilisateur d'accéder à son espace personnel.
+      <br><br>
+      Seuls les comptes enregistrés en base de données peuvent se connecter et accéder
+      aux fonctionnalités de l'application.
+    </p>
+
+    <img src="image/Ap/flutter/Connexion.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Liste des praticiens</h3>
+
+    <p>
+      Une fois connecté, l'utilisateur accède à la liste complète des praticiens
+      disponibles, récupérée dynamiquement depuis la base de données.
+      <br><br>
+      Chaque praticien est affiché avec ses informations essentielles,
+      et il est possible de consulter les avis qui lui sont associés.
+    </p>
+
+    <img src="image/Ap/flutter/Liste_practicien.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Visualisation des avis</h3>
+
+    <p>
+      L'application affiche les avis associés à chaque praticien, récupérés
+      directement depuis la base de données.
+      <br><br>
+      Chaque avis se compose d'une <strong>note</strong> (sous forme d'étoiles) et d'un
+      <strong>commentaire</strong>, affiché à la manière d'un fil de retours clients —
+      par exemple : <em>★★★★★ – "Service rapide et efficace"</em>.
+      <br><br>
+      L'application se limite à la <strong>consultation</strong> des avis : il n'est pas possible
+      d'en soumettre depuis l'interface mobile. Les avis sont ajoutés directement
+      en base de données pour le moment.
+    </p>
+
+    <img src="image/Ap/flutter/Avis_flutter.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Insertion des avis en base</h3>
+
+    <p>
+      Visuel de la base de données montrant les avis associés à chaque praticien, avec les notes et commentaires correspondants.
+    </p>
+
+    <img src="image/Ap/flutter/BDD_notation.PNG" class="modal-image">
+
+    <br>
+
+    <h3>Compétences mobilisées</h3>
+
+    <p>
+      Ce projet m'a permis de découvrir le développement mobile avec <strong>Flutter</strong>
+      et le langage <strong>Dart</strong>, la gestion de l'authentification et des sessions utilisateur,
+      ainsi que la conception d'une interface mobile intuitive et réactive.
+      <br><br>
+      Il m'a également confronté à une logique de partage de données entre plusieurs applications
+      distinctes via une base commune, ce qui m'a appris à concevoir des systèmes cohérents.
+    </p>
+
+  </div>
+</div>
   <!-- Fin des modal -->
 
   <!-- FOOTER -->

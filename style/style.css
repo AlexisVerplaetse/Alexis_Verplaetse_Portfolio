@@ -34,19 +34,19 @@ html {
 
 body {
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 20px; /* augmenté depuis 16px */
   color: var(--text);
   background: var(--bg);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.6rem; /* augmenté depuis 2rem */
   font-weight: 500;
   border-bottom: 4px solid var(--accent);
   width: fit-content;
-  margin-inline: auto; 
+  margin-inline: auto;
   margin-bottom: 2rem;
 }
 
@@ -73,7 +73,7 @@ nav {
 
 .nav-logo {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.2rem; /* augmenté depuis 2rem */
   color: var(--text);
   text-decoration: none;
 }
@@ -87,7 +87,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.2rem; /* augmenté depuis 1rem */
   font-weight: 500;
   transition: color var(--transition);
   position: relative;
@@ -130,11 +130,10 @@ section, header {
   margin-right: auto;
 }
 
-
-
 p {
   color: var(--muted);
   margin-bottom: 1rem;
+  font-size: 1.15rem; /* augmenté */
 }
 
 /* ── HERO ──────────────────────────────── */
@@ -148,21 +147,21 @@ p {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 100px;
-  padding: 0.3rem 1rem;
-  font-size: 0.8rem;
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem; /* augmenté depuis 0.8rem */
   color: var(--muted);
   margin-bottom: 1.5rem;
 }
 
 #hero h1 {
-  font-size: 2.8rem;
+  font-size: 3.4rem; /* augmenté depuis 2.8rem */
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.5rem;
 }
 
 .hero-sub {
-  font-size: 1.1rem;
+  font-size: 1.4rem; /* augmenté depuis 1.1rem */
   color: var(--accent);
   font-weight: 600;
   margin-bottom: 1rem;
@@ -171,7 +170,7 @@ p {
 .hero-desc {
   max-width: 500px;
   margin: 0 auto 2rem;
-  font-size: 0.95rem;
+  font-size: 1.15rem; /* augmenté depuis 0.95rem */
 }
 
 /* ── BOUTONS ───────────────────────────── */
@@ -180,9 +179,9 @@ p {
   background: var(--accent);
   color: #fff;
   text-decoration: none;
-  padding: 0.7rem 1.8rem;
+  padding: 0.85rem 2rem; /* légèrement agrandi */
   border-radius: var(--radius);
-  font-size: 0.9rem;
+  font-size: 1.05rem; /* augmenté depuis 0.9rem */
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -218,8 +217,8 @@ p {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 140px; /* légèrement agrandi */
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,8 +244,8 @@ p {
   background: var(--surface);
   border: 1px solid var(--border);
   color: var(--muted);
-  font-size: 0.78rem;
-  padding: 0.25rem 0.75rem;
+  font-size: 0.95rem; /* augmenté depuis 0.78rem */
+  padding: 0.3rem 0.9rem;
   border-radius: 100px;
   transition: border-color var(--transition), color var(--transition);
 }
@@ -270,7 +269,7 @@ p {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.4rem;
+  padding: 1.6rem; /* légèrement agrandi */
   transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
 }
 
@@ -281,14 +280,14 @@ p {
 }
 
 .skill-card h3 {
-  font-size: 1rem;
+  font-size: 1.2rem; /* augmenté depuis 1rem */
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .skill-card p {
-  font-size: 0.85rem;
+  font-size: 1rem; /* augmenté depuis 0.85rem */
   margin: 0;
 }
 
@@ -302,7 +301,7 @@ p {
 .project-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.8rem; /* légèrement agrandi */
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -316,13 +315,13 @@ p {
 }
 
 .project-card h3 {
-  font-size: 1.05rem;
+  font-size: 1.25rem; /* augmenté depuis 1.05rem */
   font-weight: 700;
   color: var(--text);
 }
 
 .project-card p {
-  font-size: 0.88rem;
+  font-size: 1.05rem; /* augmenté depuis 0.88rem */
   flex: 1;
   margin: 0;
 }
@@ -336,7 +335,7 @@ p {
 .link {
   color: var(--accent);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 1.05rem; /* augmenté depuis 0.88rem */
   font-weight: 600;
   cursor: pointer;
   transition: color var(--transition);
@@ -368,8 +367,8 @@ p {
   background: #666666;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
-  padding: 20px 25px;
-  width: 20rem;
+  padding: 24px 28px; /* légèrement agrandi */
+  width: 22rem; /* légèrement agrandi */
   text-align: center;
   cursor: pointer;
   overflow: hidden;
@@ -400,8 +399,8 @@ p {
 
 .contact-icon {
   background: #333;
-  width: 50px;
-  height: 50px;
+  width: 55px; /* légèrement agrandi */
+  height: 55px;
   margin: 0 auto 15px auto;
   display: flex;
   align-items: center;
@@ -418,12 +417,12 @@ p {
 
 .contact-icon svg {
   stroke: white;
-  width: 24px;
-  height: 24px;
+  width: 28px; /* légèrement agrandi */
+  height: 28px;
 }
 
 .contact-label {
-  font-size: 11px;
+  font-size: 13px; /* augmenté depuis 11px */
   color: #aaa;
   margin: 5px 0;
   text-transform: uppercase;
@@ -431,7 +430,7 @@ p {
 }
 
 .contact-value {
-  font-size: 15px;
+  font-size: 17px; /* augmenté depuis 15px */
   color: #fff;
   text-decoration: none;
   word-wrap: break-word;
@@ -445,7 +444,7 @@ p {
 }
 
 .contact-card .contact-location {
-  font-size: 11px;
+  font-size: 13px; /* augmenté depuis 11px */
   color: #ffffff;
   margin: 8px 0 0;
 }
@@ -455,7 +454,7 @@ footer {
   text-align: center;
   padding: 1.5rem 2rem;
   border-top: 1px solid var(--border);
-  font-size: 0.85rem;
+  font-size: 1rem; /* augmenté depuis 0.85rem */
   color: var(--muted);
 }
 
@@ -530,13 +529,14 @@ footer strong {
 
 .modal-content p {
   color: var(--text);
-  font-size: 2rem;
+  font-size: 1.4rem; /* augmenté depuis 2rem (qui était trop grand) */
   margin-bottom: 1.2rem;
   text-align: center;
+  line-height: 1.9;
 }
 
 .modal-content h3 {
-  font-size: 3rem;
+  font-size: 2rem; /* augmenté, harmonisé depuis 3rem */
   font-weight: 700;
   color: var(--text);
   margin-bottom: 1rem;
@@ -545,7 +545,7 @@ footer strong {
 
 .modal-content h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.2rem; /* harmonisé depuis 3rem */
   font-weight: 700;
   border-bottom: 4px solid var(--accent);
 }
@@ -557,18 +557,18 @@ footer strong {
 
 .modal-content video {
   width: 100%;
-  max-width: 80%; /* taille max */
+  max-width: 80%;
   height: auto;
   display: block;
-  margin: 20px auto; /* centre la vidéo */
-  border-radius: 10px; /* optionnel, plus propre */
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 .close {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 28px;
+  font-size: 32px; /* légèrement agrandi */
   cursor: pointer;
   color: var(--muted);
   line-height: 1;
@@ -597,7 +597,7 @@ footer strong {
   .nav-logo { font-size: 1.8rem; }
   nav a { font-size: 1rem; }
   nav ul { gap: 1.5rem; }
-  #hero h1 { font-size: 2.2rem; }
+  #hero h1 { font-size: 2.6rem; }
   .skills-grid { padding: 0 1rem 2rem; }
 }
 
@@ -608,8 +608,8 @@ footer strong {
   nav a { font-size: 0.95rem; }
 
   #hero { padding: 3rem 1rem; }
-  #hero h1 { font-size: 1.8rem; }
-  .hero-sub { font-size: 1rem; }
+  #hero h1 { font-size: 2rem; }
+  .hero-sub { font-size: 1.1rem; }
 
   section, header { padding: 2.5rem 1rem; }
   .apropos-inner { flex-direction: column; gap: 1.5rem; }
@@ -622,8 +622,8 @@ footer strong {
 }
 
 @media (max-width: 400px) {
-  #hero h1 { font-size: 1.5rem; }
-  .btn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
+  #hero h1 { font-size: 1.6rem; }
+  .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
   nav ul { gap: 0.6rem; }
 }
 
@@ -631,4 +631,3 @@ footer strong {
   0%   { transform: translate(-50%, -50%) scale(0); }
   100% { transform: translate(-50%, -50%) scale(1); }
 }
-
