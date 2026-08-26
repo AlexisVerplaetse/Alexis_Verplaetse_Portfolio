@@ -128,38 +128,24 @@
     </div>
 
 
-    <div class="project-card">
-      <div class="project-tags">
-        <span class="tag">C#</span>
-        <span class="tag">Windows Forms</span>
-        <span class="tag">Entity Framework</span>
-      </div>
-      <h3>AP C#</h3>
-      <p>Application Windows Forms de gestion des congés avec deux rôles distincts : Praticien (dépôt de demandes) et Administrateur RH (validation / refus), reliée à une base de données via Entity Framework.</p>
-      <a class="link" onclick="openModal('modal3')">Lire la suite →</a>
-    </div>
+   <div class="project-card">
+  <div class="project-tags">
+    <span class="tag">Flutter</span>
+    <span class="tag">Dart</span>
+  </div>
 
-    <div class="project-card">
-      <div class="project-tags">
-        <span class="tag">Laravel</span>
-        <span class="tag">Blade</span>
-        <span class="tag">MySQL</span>
-      </div>
-      <h3>AP Laravel</h3>
-      <p>Application web de gestion des praticiens avec authentification administrateur, affichage de la liste des praticiens et recalcul automatique de leur salaire selon leur ancienneté.</p>
-      <a class="link" onclick="openModal('modal4')">Lire la suite →</a>
-    </div>
+  <h3>Application mobile de gestion des tâches</h3>
 
-    <div class="project-card">
-      <div class="project-tags">
-        <span class="tag">Flutter</span>
-        <span class="tag">Dart</span>
-        <span class="tag">MySQL</span>
-      </div>
-      <h3>AP Flutter</h3>
-      <p>Application mobile développée avec Flutter : inscription, connexion, consultation de la liste des praticiens et visualisation des avis (note + commentaire) stockés en base de données.</p>
-      <a class="link" onclick="openModal('modal5')">Lire la suite →</a>
-    </div>
+  <p>
+    Application mobile développée avec Flutter permettant d'organiser son quotidien grâce à une To-Do List et à la planification de son emploi du temps.
+  </p>
+
+<a class="link" onclick="openModal('modal2')">Lire la suite →</a>
+
+</div>
+
+
+    
 
   </div>
 </section>
@@ -368,305 +354,63 @@
   </div>
 </div>
 
-
-  
-
-<!-- Modal3 : Projet AP C# -->
-<div id="modal3" class="modal">
+<div id="modal2" class="modal">
   <div class="modal-content">
 
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
+```
+<span class="close" onclick="closeModal('modal2')">&times;</span>
 
-    <h2>AP – Gestion des Congés en C# / Windows Forms</h2>
-    <br><br>
+<h2>Application mobile de gestion des tâches</h2>
 
+<p class="project-description">
+  <strong>Flutter / Dart — Projet personnel, 2026</strong>
+  <br><br>
+  Cette application mobile a été développée pour faciliter l'organisation du quotidien.
+  Elle permet de créer et gérer des tâches, mais également de planifier son emploi du temps.
+  Les données sont sauvegardées afin de conserver les informations de l'utilisateur.
+</p>
+
+<div class="project-screenshots">
+
+  <div class="screenshot-item">
+    <img src="image/flutter/p1.png" class="modal-image">
     <p>
-      Ce projet a été réalisé dans le cadre d'une activité pratique en deuxième année de BTS SIO.
-      <br><br>
-      L'objectif était de développer une application <strong>Windows Forms</strong> en <strong>C#</strong>
-      permettant de gérer les demandes de congés des praticiens.
-      <br>L'application distingue deux rôles : <strong>Praticien</strong> et <strong>Administrateur RH</strong>,
-      chacun disposant d'un espace dédié.
+      <strong>Choix du type de tâche</strong><br>
+      Sélection entre une tâche unique et une liste de tâches.
     </p>
+  </div>
 
+  <div class="screenshot-item">
+    <img src="image/flutter/p2.png" class="modal-image">
     <p>
-      Ce projet m'a permis de mettre en pratique la <strong>programmation orientée objet</strong>,
-      la connexion à une base de données via <strong>Entity Framework</strong>,
-      ainsi que la conception d'une interface graphique avec <strong>Windows Forms</strong>.
+      <strong>Gestion des tâches</strong><br>
+      Interface permettant de consulter et organiser ses tâches.
     </p>
+  </div>
 
-    <br>
-
-    <h3>Formulaire de connexion</h3>
-
+  <div class="screenshot-item">
+    <img src="image/flutter/p3.png" class="modal-image">
     <p>
-      L'accès à l'application est sécurisé par un formulaire d'authentification.
-      <br><br>
-      Selon le rôle de l'utilisateur connecté  <strong>Praticien</strong> ou <strong>Administrateur RH</strong> 
-      l'application redirige automatiquement vers l'interface correspondante.
+      <strong>Planification de l'emploi du temps</strong><br>
+      Saisie des informations permettant d'organiser son emploi du temps.
     </p>
+  </div>
 
-    <img src="image/Ap/csharp/Form_con.png" class="modal-image">
-
-    <br>
-
-    <h3>Espace Praticien – Demande de congé</h3>
-
+  <div class="screenshot-item">
+    <img src="image/flutter/p4.png" class="modal-image">
     <p>
-      Une fois connecté en tant que praticien, l'utilisateur peut soumettre une demande de congé
-      en sélectionnant une <strong>date de début</strong> et une <strong>date de fin</strong>.
-      <br><br>
-      Le nombre de jours de congés restants est affiché en temps réel,
-      permettant au praticien de suivre son solde disponible.
+      <strong>Emploi du temps final</strong><br>
+      Visualisation du planning généré à partir des informations saisies.
     </p>
+  </div>
 
-    <img src="image/Ap/csharp/Demande_conger.PNG" class="modal-image">
-    <br>
-
-    <h3>Espace Administrateur RH – Validation des demandes</h3>
-
-    <p>
-      L'administrateur RH dispose d'une interface dédiée listant toutes les demandes de congés soumises par les praticiens.
-      <br><br>
-      Il peut <strong>valider</strong> ou <strong>refuser</strong> chaque demande directement depuis ce panneau,
-      ce qui met automatiquement à jour le solde de congés du praticien concerné.
-    </p>
-
-    <img src="image/Ap/csharp/visuel_demande_admin.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Base de données des demandes</h3>
-
-    <p>
-      Chaque demande de congé est enregistrée en base de données avec les informations du praticien,
-      les dates demandées et le statut de la demande (en attente, validée, refusée).
-      <br><br>
-      La liaison entre l'application et la base de données est gérée via <strong>Entity Framework</strong>.
-    </p>
-
-    <img src="image/Ap/csharp/Bdd_demande.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Compétences mobilisées</h3>
-
-    <p>
-      Ce projet m'a permis de consolider plusieurs compétences clés :
-      <strong>C#</strong>, <strong>POO</strong>, conception d'interfaces graphiques avec
-      <strong>Windows Forms</strong>, utilisation d' <strong>Entity Framework</strong>,
-      gestion des rôles utilisateurs et manipulation de données en base.
-      <br><br>
-      Il m'a confronté à une logique métier concrète : gérer des droits d'accès différenciés,
-      lier des actions utilisateur à des règles de gestion automatique, et assurer
-      la cohérence des données entre les deux interfaces.
-    </p>
+</div>
+```
 
   </div>
 </div>
 
- <!-- Modal4 : Projet AP Laravel -->
-  <div id="modal4" class="modal">
-    <div class="modal-content">
 
-      <span class="close" onclick="closeModal('modal4')">&times;</span>
-
-      <h2>AP – Gestion des Praticiens avec Laravel</h2>
-      <br><br>
-
-      <p>
-        Ce projet a été réalisé dans le cadre d'une activité pratique en deuxième année de BTS SIO.
-        <br><br>
-        L'objectif était de développer une application web avec le framework <strong>Laravel</strong>,
-        connectée à une base de données de praticiens, permettant à un administrateur de gérer
-        les informations des praticiens et de calculer automatiquement leur rémunération.
-      </p>
-
-      <p>
-        Ce projet m'a permis de prendre en main Laravel pour la première fois : routing, contrôleurs,
-        modèles Eloquent, vues Blade et gestion de l'authentification. Une expérience concrète du
-        développement full-stack avec un framework professionnel.
-      </p>
-
-      <br>
-
-      <h3>Connexion administrateur</h3>
-
-      <p>
-        L'accès à l'application est sécurisé : seul un administrateur authentifié peut consulter
-        et modifier les données des praticiens.
-        <br><br>
-        La gestion de l'authentification a été mise en place grâce au système intégré de Laravel.
-      </p>
-
-      <img src="image/Ap/Laravel/Con_laravel.png" class="modal-image">
-
-      <br>
-
-      <h3>Liste des praticiens</h3>
-
-      <p>
-        Une fois connecté, l'administrateur accède à la liste complète des praticiens
-        enregistrés dans la base de données.
-        <br><br>
-        Chaque entrée affiche les informations essentielles du praticien ainsi que son ancienneté.
-      </p>
-
-      <img src="image/Ap/Laravel/liste_laravel.png" class="modal-image">
-
-      <br>
-
-      <h3>Modification des années d'ancienneté</h3>
-
-      <p>
-        L'administrateur peut modifier les années d'ancienneté de chaque praticien directement
-        depuis l'interface.
-        <br><br>
-        Cette modification entraîne un <strong>recalcul automatique</strong> du salaire mensuel
-        et annuel du praticien, selon les règles métier définies.
-      </p>
-
-      <img src="image/Ap/Laravel/pers_laravel.png" class="modal-image">
-
-      <br>
-
-      <h3>Démonstration</h3>
-
-      <p>
-        Voici une démonstration complète du fonctionnement de l'application,
-        de la connexion administrateur jusqu'à la mise à jour des données d'un praticien.
-      </p>
-
-      <video autoplay loop muted playsinline>
-        <source src="image/gif/AP_laravel.mp4" type="video/mp4">
-        Ton navigateur ne supporte pas la vidéo.
-      </video>
-
-      <br>
-
-      <h3>Compétences mobilisées</h3>
-
-      <p>
-        Ce projet m'a permis d'acquérir de nombreuses compétences en développement web moderne :
-        prise en main du framework <strong>Laravel</strong>, structuration d'une application MVC,
-        création de vues dynamiques avec <strong>Blade</strong>.
-        <br><br>
-        Il m'a également confronté à une logique métier concrète : lier des données à des règles
-        de calcul automatique, ce qui m'a appris à penser l'architecture d'une application
-        au-delà du simple affichage.
-      </p>
-
-    </div>
-  </div>
-
-   <!-- Modal5 : Projet AP Flutter -->
-<div id="modal5" class="modal">
-  <div class="modal-content">
-
-    <span class="close" onclick="closeModal('modal5')">&times;</span>
-
-    <h2>AP – Application Mobile de Gestion des Praticiens avec Flutter</h2>
-    <br><br>
-
-    <p>
-      Ce projet a été réalisé dans le cadre d'une activité pratique en deuxième année de BTS SIO.
-      <br><br>
-      L'objectif était de développer une <strong>application mobile</strong> avec le framework <strong>Flutter</strong>,
-      connectée à la même base de données que les autres activités pratiques.
-      <br>L'application permet aux utilisateurs de s'inscrire, de se connecter, de consulter
-      la liste des praticiens ainsi que les avis associés à chacun d'eux.
-    </p>
-
-    <p>
-      Ce projet m'a permis de découvrir le développement mobile multiplateforme avec Flutter,
-      la gestion de l'authentification côté client, ainsi que l'affichage dynamique
-      de données issues d'une base partagée.
-    </p>
-
-    <br>
-
-    <h3>Formulaire d'inscription</h3>
-
-    <p>
-      L'application propose un formulaire d'inscription permettant à un nouvel utilisateur
-      de créer son compte en renseignant ses informations personnelles.
-      <br><br>
-      Les données saisies sont enregistrées directement dans la base de données partagée
-      avec les autres activités pratiques.
-    </p>
-
-    <img src="image/Ap/flutter/Inscription.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Formulaire de connexion</h3>
-
-    <p>
-      Un formulaire de connexion sécurisé permet à l'utilisateur d'accéder à son espace personnel.
-      <br><br>
-      Seuls les comptes enregistrés en base de données peuvent se connecter et accéder
-      aux fonctionnalités de l'application.
-    </p>
-
-    <img src="image/Ap/flutter/Connexion.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Liste des praticiens</h3>
-
-    <p>
-      Une fois connecté, l'utilisateur accède à la liste complète des praticiens
-      disponibles, récupérée dynamiquement depuis la base de données.
-      <br><br>
-      Chaque praticien est affiché avec ses informations essentielles,
-      et il est possible de consulter les avis qui lui sont associés.
-    </p>
-
-    <img src="image/Ap/flutter/Liste_practicien.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Visualisation des avis</h3>
-
-    <p>
-      L'application affiche les avis associés à chaque praticien, récupérés
-      directement depuis la base de données.
-      <br><br>
-      Chaque avis se compose d'une <strong>note</strong> (sous forme d'étoiles) et d'un
-      <strong>commentaire</strong>, affiché à la manière d'un fil de retours clients —
-      par exemple : <em>★★★★★ – "Service rapide et efficace"</em>.
-      <br><br>
-      L'application se limite à la <strong>consultation</strong> des avis : il n'est pas possible
-      d'en soumettre depuis l'interface mobile. Les avis sont ajoutés directement
-      en base de données pour le moment.
-    </p>
-
-    <img src="image/Ap/flutter/Avis_flutter.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Insertion des avis en base</h3>
-
-    <p>
-      Visuel de la base de données montrant les avis associés à chaque praticien, avec les notes et commentaires correspondants.
-    </p>
-
-    <img src="image/Ap/flutter/BDD_notation.PNG" class="modal-image">
-
-    <br>
-
-    <h3>Compétences mobilisées</h3>
-
-    <p>
-      Ce projet m'a permis de découvrir le développement mobile avec <strong>Flutter</strong>
-      et le langage <strong>Dart</strong>, la gestion de l'authentification et des sessions utilisateur,
-      ainsi que la conception d'une interface mobile intuitive et réactive.
-      <br><br>
-      Il m'a également confronté à une logique de partage de données entre plusieurs applications
-      distinctes via une base commune, ce qui m'a appris à concevoir des systèmes cohérents.
-    </p>
-
-  </div>
 </div>
   <!-- Fin des modal -->
 
